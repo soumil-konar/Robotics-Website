@@ -40,3 +40,9 @@ body{
     background:yellow;
     color: #fff;
 }
+/* navbar css */
+ul li{
+    display: inline-block;
+    margin: 0px 10px;
+    font-size: 20px;
+}
