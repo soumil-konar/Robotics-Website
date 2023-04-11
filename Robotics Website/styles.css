@@ -3,95 +3,184 @@
 /* @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap"); */
 
 :root {
-  --outline: 0.1rem solid rgba(0, 0, 0, 0.1);
+    --outline: 0.1rem solid rgba(0, 0, 0, 0.1);
 }
 
 * {
-  font-family: "Noto Sans", sans-serif;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  outline: none;
-  border: none;
-  text-transform: capitalize;
-  transition: all 0.2s linear;
+    font-family: "Noto Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    transition: all 0.3s linear;
+    box-sizing: border-box;
 }
 
 html {
-  scroll-behavior: smooth;
-  scroll-padding-top: 7rem;
+    scroll-behavior: smooth;
+    scroll-padding-top: 7rem;
 }
 
 body {
-  background: #eee;
+    background: #eee;
 }
 
 .btn {
-  margin-top: 1rem;
-  display: inline-block;
-  padding: 0.8rem 3rem;
-  font-size: 1.7rem;
-  border: 0.2rem solid black;
-  color: black;
-  border-radius: 0.5rem;
-  cursor: pointer;
-  background: none;
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 0.8rem 3rem;
+    font-size: 1.7rem;
+    border: 0.2rem solid black;
+    color: black;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    background: none;
 }
 
 .btn:hover {
-  background: yellow;
-  color: #fff;
+    background: yellow;
+    color: #fff;
 }
 /* navbar css */
 ul li {
-  display: inline-block;
-  margin: 0px 10px;
-  font-size: 20px;
+    display: inline-block;
+    margin: 0px 10px;
+    font-size: 20px;
 }
 
 .container {
-  height: 25rem;
-  width: auto;
-  background-color: lemonchiffon;
-  background-image: url(Asserts/macos-big-sur-apple-layers-fluidic-colorful-dark-wwdc-2020-6016x6016-1432.jpg);
-  background-size: 100rem;
+    height: 25rem;
+    width: auto;
+    background-color: lemonchiffon;
+    background-image: url(Asserts/macos-big-sur-apple-layers-fluidic-colorful-dark-wwdc-2020-6016x6016-1432.jpg);
+    background-size: 100rem;
 }
 
 .navbar .navbar-links a {
-  color: white;
-  text-decoration: none;
+    color: white;
+    text-decoration: none;
 }
 
 .navbar-container {
-  padding: 1rem 2rem 1rem 2rem;
-  justify-content: space-between;
-  border: solid 2px black;
-  background: rgba(0, 0, 0, 0.4);
-  text-align: center;
-  position: sticky;
-  top: 0;
+    padding: 1rem 2rem 1rem 2rem;
+    justify-content: space-between;
+    border: solid 2px black;
+    background: rgba(0, 0, 0, 0.4);
+    text-align: center;
+    position: sticky;
+    top: 0;
 }
 
 .navbar-links li {
-  font-size: 1rem;
+    font-size: 1rem;
 }
 
 /* home section begins */
 
 #home {
-  background: black;
+    background: black;
 }
 .filler {
-  width: 100%;
-  height: 100rem;
+    width: 100%;
+    height: 20rem;
 }
+
+
+/* FAQ CSS Starts */
+
+
+.title {
+    margin-top: 15vh;
+    margin-bottom: 4rem;
+}
+
+.title h2 {
+    color: #c59d5f;
+    text-align: center;
+}
+
+.section-center {
+    max-width: 10rem;
+}
+
+.question {
+    background: #fff;
+    border-radius: 0.5rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem 1.5rem 0 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.question-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: capitalize;
+    padding-bottom: 1rem;
+}
+
+.question-title p {
+    margin-bottom: 0;
+    letter-spacing: 0.25rem;
+    color: hsl(209, 61%, 16%);
+}
+
+.question-btn {
+    font-size: 1.5rem;
+    background: transparent;
+    border-color: transparent;
+    cursor: pointer;
+    color: #c59d5f;
+    transition: all 0.3s linear;
+}
+
+.question-btn:hover {
+    transform: rotate(90deg);
+}
+
+.question-text {
+    padding: 1rem 0 1.5rem 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.question-text p {
+    margin-bottom: 0;
+}
+
+/* hide text */
+.question-text {
+    display: none;
+}
+
+.show-text .question-text {
+    display: block;
+}
+
+.minus-icon {
+    display: none;
+}
+
+.show-text .minus-icon {
+    display: inline;
+}
+
+.show-text .plus-icon {
+    display: none;
+}
+
+
+
+
+
+
 
 
 /* Footer css starts here */
 
 .footer{
     width: 100%;
-    position:absolute;
+    position:static;
     bottom: 0;
     background: #A7C7E7;
     color: black;
@@ -141,3 +230,13 @@ ul li {
     color: #fff;
 }
 
+.footer .row .column .links{
+    display: block;
+    font-size: 1rem;
+    color: black;
+    padding: 1rem 0;
+}
+
+.footer .row .column .links:hover i{
+    padding-right: 2rem;
+}
