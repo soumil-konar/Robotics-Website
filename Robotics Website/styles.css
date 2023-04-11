@@ -46,3 +46,37 @@ ul li{
     margin: 0px 10px;
     font-size: 20px;
 }
+
+
+
+
+
+
+
+
+
+footer{
+    width: 100%;
+    position:absolute;
+    bottom: 0;
+    background: skyblue;
+    color: red;
+    padding: 100px 0 30px;
+    border-top-left-radius: 125px;
+    font-size: 13px;
+    line-height: 20px;
+}
+
+.row{
+     margin: auto;
+     width: 85%;
+     display: flex;
+     flex-wrap: wrap;
+     align-items: flex-start;
+     justify-content: space-between;
+}
+
+.coloum{
+     flex-basis: 25%;
+     padding: 10px;
+}
