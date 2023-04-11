@@ -55,28 +55,93 @@ ul li{
 
 
 
-footer{
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Footer css starts here */
+
+.footer{
     width: 100%;
     position:absolute;
     bottom: 0;
-    background: skyblue;
-    color: red;
+    background: #A7C7E7;
+    color: black;
     padding: 100px 0 30px;
     border-top-left-radius: 125px;
+    border-top-right-radius: 125px;
     font-size: 13px;
     line-height: 20px;
 }
 
-.row{
-     margin: auto;
-     width: 85%;
-     display: flex;
-     flex-wrap: wrap;
-     align-items: flex-start;
-     justify-content: space-between;
-}
+/* .row{
+    margin: auto;
+    width: 85%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+} */
 
 .coloum{
-     flex-basis: 25%;
-     padding: 10px;
+    flex-basis: 25%;
+    padding: 10px;
 }
+
+.footer .row{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem,1fr));
+    gap: 1.5rem;
+}
+
+.footer .row .column .share a{
+    height: 4rem;
+    width: 4rem;
+    line-height: 4rem;
+    border-radius: .5rem;
+    font-size: 2rem;
+    color: black;
+    margin-left: .2rem;
+    background: #eee;
+    text-align: center;
+
+}
+
+.footer .row .column .share a:hover{
+    background: yellow;
+    color: #fff;
+}
+
